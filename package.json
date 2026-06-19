@@ -1,0 +1,59 @@
+{
+  "name": "@dy/logging",
+  "version": "0.1.0",
+  "description": "Librería de logging homologada para microservicios NestJS: pino (JSON estructurado), correlación de request-id entre servicios, integración con DataDog, redacción de secrets/PII y muestreo de health-checks.",
+  "author": "George Bravo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USER/dy-logging.git"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USER/dy-logging#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USER/dy-logging/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "nestjs",
+    "logging",
+    "pino",
+    "datadog",
+    "observability",
+    "request-id",
+    "trace-id"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "peerDependencies": {
+    "@nestjs/common": ">=9 <12",
+    "@nestjs/core": ">=9 <12",
+    "rxjs": "^7"
+  },
+  "peerDependenciesMeta": {
+    "dd-trace": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "nestjs-pino": "^4.1.0",
+    "pino": "^9.5.0",
+    "pino-http": "^10.3.0",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^10.4.4",
+    "@nestjs/core": "^10.4.4",
+    "@types/node": "^20.14.0",
+    "rxjs": "^7.8.1",
+    "typescript": "^5.5.4"
+  }
+}
