@@ -1,4 +1,9 @@
 node_modules/
 dist/
+coverage/
 *.log
 .env
+
+# Presentaciones generadas desde docs/*.md (regenerables con marp-cli)
+docs/*.pdf
+docs/*.pptx

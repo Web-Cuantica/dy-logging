@@ -1,6 +1,9 @@
 src/
 node_modules/
 tsconfig*.json
+jest.config.js
+coverage/
+docs/
 .gitignore
 *.log
 .env*
