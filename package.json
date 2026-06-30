@@ -2,7 +2,7 @@
   "name": "@dy/logging",
   "version": "0.1.0",
   "description": "Librería de logging homologada para microservicios NestJS: pino (JSON estructurado), correlación de request-id entre servicios, integración con DataDog, redacción de secrets/PII y muestreo de health-checks.",
-  "author": "George Bravo",
+  "author": "Web Cuántica S de R.L. de C.V.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Web-Cuantica/dy-logging.git"
